@@ -1,21 +1,22 @@
+import { Injectable } from "@angular/core";
+import { Subscription, Observable } from "rxjs";
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable, Subscription } from 'rxjs';
-import { IIndicador } from '../models/Indicador';
+import { IEstrutura } from '../models/Estrutura';
 
-@Injectable({
+
+@Injectable(
+{
     providedIn: 'root'
 })
 
-export class IndicadorService
-{
+export class IndicadorService {
     sub!: Subscription;
-    private indicadorGetURL = 'http://';
+    private indicadorGetUrl = 'http://localhost:5266/api/allusers';
 
     constructor(private http: HttpClient){}
 
-    getAllIndicadores(): Observable<IIndicador[]> {
-        return this.http.get<IIndicador[]>(this.indicadorGetURL);
+    getAllIndicadores(): Observable<IEstrutura[]>
+    {
+        return this.http.get<IEstrutura[]>(this.indicadorGetUrl);
     }
-    
 }

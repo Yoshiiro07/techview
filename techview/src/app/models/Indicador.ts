@@ -1,18 +1,12 @@
-export interface IIndicador 
-{
+import { ValorMensal } from "./ValorMensal";
+import { ValorTrimestral } from "./ValorTrimestral";
+
+export interface Indicador {
     indicadorId: number;
-    subItemId: number;
-    itemName: string;
-    subItemName: string;
-    indicadorName: string;
-    indicadorValor: string;
-    valoresMensais: string;
-    valoresTrimestrais: string;
-    risco: string;
+    indicadorNome: string;
+    risco: number;
     maiorMenor: string;
-    periodo: string;
-    taxa: string;
-    subItemPriorizado: string;
-    favorite: boolean;
-    valor: string;
+    taxa: number;
+    valoresMensais: ValorMensal[];
+    valoresTrimestrais: ValorTrimestral[];
 }

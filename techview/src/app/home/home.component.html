@@ -1,0 +1,30 @@
+<div class="row">
+  Teste data
+</div>
+
+<br><br>
+<div class="row">
+
+  <div class="col-lg-2">
+    <input type="text" placeholder="Selecione uma opção" matInput [formControl]="toppingControl" [matAutocomplete]="auto">
+    <mat-autocomplete class="mat-autocomplete-box" #auto="matAutocomplete">
+      <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+    </mat-autocomplete>
+  </div>
+
+  <div class="col-lg-2">
+    teste2
+  </div>
+
+  <div class="col-lg-2">
+    teste
+  </div>
+
+  <div class="col-lg-2">
+    teste
+  </div>
+
+
+</div>
+
+
