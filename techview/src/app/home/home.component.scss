@@ -19,9 +19,6 @@
     }
 }
 
-
-
-
 .titleheader {
     color: white;
     font-size: 18px;
@@ -29,20 +26,6 @@
     font-family:'Times New Roman', Times, serif;
     margin-top: 1rem;
 }
-
-.logout {
-
-    @media (max-width: 575px) {
-        width: 179px;
-        height: 28px;
-        color: white;
-        font-size: 14px;
-        border-radius: 4px;
-        background-color: #356FFF;
-        border: 1px solid #356FFF;
-    }
-}
-
 
 .filtermenu {
     box-shadow: 0.3em 0.3em 1em #d7d7d7;
@@ -60,15 +43,6 @@
     color: #54698D;
 }
 
-
-.headerbuttonsarea {
-    justify-content:center;
-
-    @media (max-width: 575px) {
-        width: 100px;
-    }
-}
-
 .buttonheader {
     width: 179px;
     height: 28px;
@@ -80,5 +54,24 @@
 
     @media (max-width: 575px) {
         width: 150px;
+    }
+}
+
+.logout {
+    position: absolute;
+    top: 0;
+    right:0;
+    margin-right: 20px;
+    margin-top: 10px;
+    @media (max-width: 575px) {
+        width: 120px;
+        height: 28px;
+        color: white;
+        font-size: 14px;
+        border-radius: 4px;
+        background-color: #356FFF;
+        border: 1px solid #356FFF;
+        text-align: center;
+        text-decoration: none;
     }
 }
