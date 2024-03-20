@@ -1,15 +1,84 @@
+.pagecontainer {
+    height:100%;
+}
 
-.bgleft {
-    background-color: blue;
+.bgheader {
+    height: 100px;
+    background-image: url("/assets/bg.png");
+    display: flex;
+
+    @media (max-width: 575px) {
+        height: 200px;
+    }
+}
+
+.logotechview {
+    justify-content: start;
+    @media (max-width: 575px) {
+        justify-content: center;
+    }
 }
 
 
-.mat-autocomplete-panel {
-    max-height: 192px !important;
+
+
+.titleheader {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 1rem;
 }
 
-.mat-autocomplete-box {
-    font-size: 8px;
-    max-height: 92px !important;
-    border: 1px solid #D3D3D3;
+.logout {
+
+    @media (max-width: 575px) {
+        width: 179px;
+        height: 28px;
+        color: white;
+        font-size: 14px;
+        border-radius: 4px;
+        background-color: #356FFF;
+        border: 1px solid #356FFF;
+    }
+}
+
+
+.filtermenu {
+    box-shadow: 0.3em 0.3em 1em #d7d7d7;
+}
+
+
+.boxselect {
+    margin-left:15px;
+}
+
+.buttonfilter {
+    width: 202px;
+    height: 33px;
+    font-size: 14px;
+    color: #54698D;
+}
+
+
+.headerbuttonsarea {
+    justify-content:center;
+
+    @media (max-width: 575px) {
+        width: 100px;
+    }
+}
+
+.buttonheader {
+    width: 179px;
+    height: 28px;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #356FFF;
+    border: 1px solid #356FFF;
+
+    @media (max-width: 575px) {
+        width: 150px;
+    }
 }
