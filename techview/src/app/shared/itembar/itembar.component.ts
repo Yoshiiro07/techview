@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-itembar',
+  selector: 'tv-itembar',
   templateUrl: './itembar.component.html',
   styleUrls: ['./itembar.component.scss']
 })

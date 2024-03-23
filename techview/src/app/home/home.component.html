@@ -21,13 +21,65 @@
         <a href="#" style="color:aliceblue">Sair</a>
       </div>
     </div>
-  </div>
+  </div> 
 
-
+  <!-- Filter Block  -->
   <div id="filter" class="container-fluid filtermenu">
     <div class="container">
-          <div class="row">
-            <div class="col-lg-2 mb-2 mt-2 boxselect">Jornada análise
+
+          <!-- ROW 1 -->
+          <div class="row justify-content-center">
+            
+                <div class="col-5 col-lg-2 mb-2 mt-2 boxselect">Jornada análise
+                  <div class="row">
+                    <select class="form-control buttonfilter">
+                    <option>Direciona Tech</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-5 col-lg-2 mb-2 mt-2 boxselect">Ordenação
+                  <div class="row">
+                    <select class="form-control buttonfilter">
+                    <option>Do Melhor para o pior</option>
+                    <option>Do pior para o Melhor</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-5 col-lg-2 mb-2 mt-2 boxselect">Data Referência
+                  <div class="row">
+                    
+                    <mat-select disabled class="form-control buttonfilter">
+                    <mat-option>Do pior para o melhor</mat-option>
+                    <mat-option>Do melhor para o pior</mat-option>
+                    </mat-select>
+                  </div>
+                </div>
+
+                <div class="col-5 col-lg-2 mb-2 mt-2 boxselect">Semaforização
+                  <div class="row">
+                    <mat-select disabled class="form-control buttonfilter">
+                      <mat-option>Do pior para o melhor</mat-option>
+                      <mat-option>Do melhor para o pior</mat-option>
+                      </mat-select>
+                  </div>
+                </div>
+
+                <div class="col-5 col-lg-2 mb-2 mt-2 boxselect">Ocultar/Exibir
+                  <div class="row">
+                    <mat-select disabled class="form-control buttonfilter">
+                      <mat-option>Do pior para o melhor</mat-option>
+                      <mat-option>Do melhor para o pior</mat-option>
+                      </mat-select>
+                  </div>
+                </div>
+          </div>
+
+          <!-- ROW 2 -->
+          <div class="row justify-content-center">
+            
+            <div class="col-5 col-lg-2 mb-2 mt-2 boxselect">Diretoria
               <div class="row">
                 <select class="form-control buttonfilter">
                 <option>Direciona Tech</option>
@@ -35,35 +87,117 @@
               </div>
             </div>
 
-            <div class="col-lg-2 mb-2 mt-2 boxselect">Ordenação
+            <div class="col-5 col-lg-2 mb-2 mt-2 boxselect">Comunidade
               <div class="row">
                 <select class="form-control buttonfilter">
-                <option>Do pior para o melhor</option>
+                <option>Do Melhor para o pior</option>
+                <option>Do pior para o Melhor</option>
                 </select>
               </div>
             </div>
 
-            <div class="col-lg-2 mb-2 mt-2 boxselect">Ordenação
+            <div class="col-5 col-lg-2 mb-2 mt-2 boxselect">Release Train
               <div class="row">
-                <select class="form-control buttonfilter">
-                <option>Do pior para o melhor</option>
-                </select>
+                
+                <mat-select disabled class="form-control buttonfilter">
+                <mat-option>Do pior para o melhor</mat-option>
+                <mat-option>Do melhor para o pior</mat-option>
+                </mat-select>
               </div>
             </div>
 
-            <div class="col-lg-2 mb-2 mt-2 boxselect">Ordenação
+            <div class="col-5 col-lg-2 mb-2 mt-2 boxselect">Squad
               <div class="row">
-                <select class="form-control buttonfilter">
-                <option>Do pior para o melhor</option>
-                </select>
+                <mat-select disabled class="form-control buttonfilter">
+                  <mat-option>Do pior para o melhor</mat-option>
+                  <mat-option>Do melhor para o pior</mat-option>
+                  </mat-select>
               </div>
             </div>
 
+            <div class="col-5 col-lg-3 mt-2 boxselect">
+              <div class="row selectorfont"></div>
+              <div class="row">
+                <button class="buttoncleanOn mt-2">Limpar filtros</button>
+                <button class="buttonfillOn mt-2">Filtrar</button>
+                <img class="buttonexpand" src="./assets/btnexpand.png" />
+              </div>
+            </div>
+        </div>
+        <!-- ROW 2 END -->
+
+      </div>  
+    </div>
+    <!-- End Filter Block  -->
+
+
+    <!-- Sub Menu -->
+    <div class="container mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Dir Cto Arquit Dev Foud Exper</li>
+              </ol>
+            </nav>
           </div>
 
-    </div>
-  </div>
+          <div class="col-lg-5">
+            <button class="btnfiltercolorgreen"></button>
+            <span class="Controle">Sob Controle</span>
 
-  
- 
-</div>
+            <button class="btnfiltercolorgreen"></button>
+            <span class="Atencao">Em Atenção</span>
+
+            <button class="btnfiltercolorgreen"></button>
+            <span class="Critico">Crítico</span>
+
+            <button class="btnfiltercolorgreen"></button>
+            <span class="colorfilter">N/A</span>
+          </div>
+
+          <div class="col-lg-3">
+            <button class="">Tabela</button>
+            <button class="">Dashboard</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-2">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-lg-8">
+            <h3 class="titleuser">Dir Cto Arquit Dev Foud Exper</h3>
+          </div>
+          <div class="col-lg-3">
+            <div class="row">
+              
+              <form>
+                  <input class="form-control" buttonsearchindicador>
+                  <mat-autocomplete>
+                  <mat-option></mat-option>
+                </mat-autocomplete>
+              </form>
+            
+            </div>
+            <div>
+              <div class="row"><span class="searchreference">Exibindo: </span></div>
+            </div>
+          </div>
+
+          <div class="row" *ngIf="view == 'cards'">
+            <tv-itembar></tv-itembar>
+          </div>
+
+
+          <div class="container-fluid mt-5 bgfooter text-center">
+            <footer>
+              <img style="margin-top: 10px;" src="./assets/logo.png" class="img-fluid">
+            </footer>
+          </div>
+
+</div>  <!-- Page Container -->
+

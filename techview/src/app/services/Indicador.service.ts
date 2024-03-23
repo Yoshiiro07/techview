@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Subscription, Observable } from "rxjs";
 import { HttpClient } from '@angular/common/http';
-import { IEstrutura } from '../models/Estrutura';
+import { Estrutura } from '../models/Estrutura';
 
 
 @Injectable(

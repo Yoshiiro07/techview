@@ -1,6 +1,7 @@
+import { Comunidade } from "./Comunidade";
+
 export interface Diretoria {
-    estruturaId: string;
-    estruturaNome: string;
-    codigoTipo: number;
-    listaItens: Item[];
+    codDiretoria: string;
+    nomeDiretoria: string;
+    listaComunidades: Comunidade[];
 }

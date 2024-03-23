@@ -1,6 +1,6 @@
 import { Item } from "./Item";
 
-export interface IEstrutura {
+export interface Estrutura {
     estruturaId: string;
     estruturaNome: string;
     codigoTipo: number;
